@@ -69,7 +69,7 @@ const txb = new Transaction();
 
     setCircles([...circles, { ...circleDraft, addresses }])
      txb.moveCall({
-        target: `${PACKAGE_ID}::${MODULE_NAME}::${FUNCTION_NAME}`,
+        target: `${PACKAGE_ID}::${MODULE_NAME}::create_circle`,
         arguments: [
           txb.pure.u64(contribution),
           txb.pure("vector<address>",members ),

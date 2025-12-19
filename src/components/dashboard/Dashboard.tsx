@@ -107,9 +107,9 @@ export default function Dashboard() {
     },
     {
       title: "Next Payout",
-      count: dashboard ? mistToSui(dashboard.next_payout.payout_amount) : "0",
+      count: dashboard ? mistToSui(dashboard?.next_payout.payout_amount) : "0",
       unit: "SUI",
-      subtitle: `from ${dashboard?.next_payout.name}`,
+      subtitle: `from ${dashboard ?dashboard?.next_payout.name: "anon"}`,
       iconType: "give",
     },
     {
